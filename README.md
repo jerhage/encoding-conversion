@@ -20,9 +20,11 @@ This script converts a file of unknown encoding to UTF-8. It supports automatic 
 - `iconv`: For converting the file to UTF-8.
 
 Install these tools if they are not already available on your machine:
+### Debian-based systems
+`sudo apt-get install uchardet iconv`
 
-`sudo apt-get install uchardet iconv`      # For Debian-based systems
-`sudo yum install uchardet iconv`          # For Red Hat-based systems
+### Red Hat-based systems
+`sudo yum install uchardet iconv`
 
 Usage
 
@@ -51,7 +53,7 @@ Convert a file with a specified encoding:
 
 Convert and specify an output file name:
 
-`./convert.sh -o converted_file -f UTF-16 input.txt`
+`./convert.sh -o converted_file.txt -f UTF-16 input.txt`
 
 # Potential Errors
 
